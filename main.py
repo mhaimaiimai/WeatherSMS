@@ -1,12 +1,13 @@
 import requests
+import os
 from twilio.rest import Client
 
 OWENDPOINT = 'https://api.openweathermap.org/data/3.0/onecall?'
-OWAPIKEY = ''
+OWAPIKEY = os.environ.get('OWAPIKEY_ENV')
 LAT = 0
 LON = 0
-TWILIOSID = ''
-TWILIOTOKEN = ''
+TWILIOSID = os.environ.get('TWILIOSID_ENV')
+TWILIOTOKEN = os.environ.get('TWILIOTOKEN_ENV')
 TELFROM = ''
 TELTO = ''
 
